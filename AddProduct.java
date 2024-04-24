@@ -18,7 +18,6 @@ public class AddProduct {
 
         Statement stmt1 = null;
         ResultSet rs = null;
-        ResultSet rs2 = null;
 
         try {
             //Create statement object to send the SQL statement to the DBMS
@@ -39,9 +38,6 @@ public class AddProduct {
                 System.out.println(rs.getString("depid"));
                 System.out.println(rs.getInt("quantity"));
             }
-
-
-
 
         } catch (SQLException e) {
             System.out.println("An exception was thrown");
